@@ -117,7 +117,7 @@ const ExpenseList = ({ refreshTrigger }) => {
                                             </div>
                                             {expense.receipt && (
                                                 <a
-                                                    href={`http://localhost:3001/${expense.receipt}`}
+                                                    href={`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/${expense.receipt}`}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="inline-flex items-center text-xs text-violet-600 hover:text-violet-500 gap-1 opacity-0 group-hover:opacity-100 transition-opacity"
